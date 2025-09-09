@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        Poppins: ["Poppins", "sans-serif"],
+                        Rubik: ["Rubik Doodle Shadow", "cursive"],
+                    },
+                },
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Doodle+Shadow&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="font-Poppins">
+
+    <nav class="custom_container flex justify-between items-center lg:pt-4  pt-4">
+
+        <div>
+            <img src="./images/logo.png" alt="Company Logo" class="w-40 md:w-56">
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden lg:flex items-center  rounded-full ">
+            <li><a href="index.html"
+                    class="nav-link lg:text-lg font-normal  hover:bg-[#ffe2e2] rounded-xl py-1 px-5">Home</a></li>
+            <li><a href="index.html#aboutus"
+                    class="nav-link lg:text-lg font-normal hover:bg-[#ffe2e2] rounded-xl py-1 px-5">About</a></li>
+            <li><a href="/product.html"
+                    class="nav-link lg:text-lg font-normal hover:bg-[#ffe2e2] rounded-xl py-1 px-5">Products</a></li>
+            <li><a href="indonesia.html"
+                    class=" lg:text-lg font-normal hover:bg-[#ffe2e2] rounded-xl py-1 px-5">Indonesia Factory</a></li>
+            <li><a href="index.html#locations"
+                    class="nav-link lg:text-lg font-normal hover:bg-[#ffe2e2] rounded-xl py-1 px-5">Location</a></li>
+            <li><a href="index.html#contact"
+                    class="nav-link lg:text-lg font-normal hover:bg-[#ffe2e2] rounded-xl py-1 px-5">Contact Us</a></li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="lg:hidden text-2xl ">
+            <i class="fa-solid fa-bars "></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed top-0 right-0 w-3/4 h-full bg-white z-50  text-lg font-medium pt-28">
+
+        <!-- Close Button -->
+        <button id="close-btn" class="close-btn absolute top-6 right-6 text-3xl text-gray-700 hover:text-black">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Links -->
+        <div class="flex flex-col gap-4 justify-center items-center">
+            <a href="index.html" class="close-btn hover:text-[#fff] hover:bg-[#D73543] transition">Home</a>
+            <a href="index.html#aboutus" class=" close-btn hover:text-[#fff] hover:bg-[#D73543] transition">About</a>
+            <a href="/product.html" class="close-btn hover:text-[#fff] hover:bg-[#D73543] transition">Products</a>
+            <a href="indonesia.html" class=" close-btn hover:text-[#fff] hover:bg-[#D73543] transition">Indonesia
+                Factory</a>
+            <a href="index.html#locations"
+                class="close-btn hover:text-[#fff] hover:bg-[#D73543] transition">Location</a>
+            <a href="index.html#contact" class="close-btn hover:text-[#fff] hover:bg-[#D73543] transition">Contact
+                Us</a>
+        </div>
+    </div>
+
+    <div class="">
+        <div class="relative">
+            <img src="./images/about.png" alt="about" class="w-full object-cover">
+        </div>
+        <div class="">
+            <div class="absolute lg:top-[365px] top-32 lg:left-[320px] left-6 md:left-[8rem] md:top-[13rem]">
+                <div
+                    class="bg-[#fff] lg:rounded-3xl rounded-xl shadow-2xl lg:py-7 py-4 lg:w-[950px] md:w-[550px] w-[340px]">
+                    <div class="flex justify-around items-center lg:gap-0 gap-4 ">
+                        <div class=" flex flex-col justify-center  items-center">
+                            <h1 class=" font-bold text-[#7F7F7F] md:text-2xl text-[20px] lg:text-5xl">100+</h1>
+                            <p class="font-bold lg:text-xl  text-[10px] md:text-sm text-[#7F7F7F]"> Products Delivered
+                            </p>
+                        </div>
+                        <div class=" flex flex-col justify-center items-center">
+                            <h1 class=" font-bold text-[#7F7F7F] text-[20px] md:text-2xl lg:text-5xl">10+</h1>
+                            <p class="font-bold lg:text-xl  text-[10px] md:text-sm text-[#7F7F7F]"> Year Of Experience
+                            </p>
+                        </div>
+                        <div class=" flex flex-col justify-center items-center">
+                            <h1 class=" font-bold text-[#7F7F7F] text-[20px] md:text-2xl lg:text-5xl">100%</h1>
+                            <p class="font-bold lg:text-xl text-[10px] md:text-sm text-[#7F7F7F]">Satisfied Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="custom_container">
+        <div class="text-[#fff] lg:text-start mt-24 mb-5 lg:mb-10 lg:mt-28">
+            <a href="/index.html" class="">
+                <button
+                    class="lg:py-3 py-2 px-4 lg:px-6 text-sm lg:text-[15px] bg-[#D73543] hover:bg-[#a52631] rounded-xl ">
+                    <i class="fa-solid fa-arrow-left"></i> Back
+                </button>
+            </a>
+        </div>
+
+        <div>
+            <div class="lg:mb-5 mb-4 text-center lg:my-10 my-5">
+                <p class="font-Rubik font-normal lg:text-2xl text-lg leading-none">ABOUT US</p>
+                <p class="lg:text-4xl text-2xl font-bold  -mt-[6px] leading-none">ABOUT US</p>
+            </div>
+            <div class="text-center flex flex-col gap-7 lg:mb-36 mb-12">
+                <p class="lg:text-lg text-xs text-justify">
+                    Pooja Exports is a premier exports company operating in 32 countries across the globe over the last
+                    25 years. Headquartered in Hong Kong, our team consists of high end professionals, well qualified in
+                    the field of sourcing, packaging and shipping. Strongly driven by the will to deliver the best
+                    quality products to our customers, we continuously remodel our priorities, keeping our customers
+                    interest as the base for every decision we take.
+                </p>
+                <p class="lg:text-lg text-xs text-justify"> We offer the full spectrum of services like product
+                    procurement, product
+                    delivery and customer
+                    service. We have in-depth expertise in the production of several of the products we produce. We
+                    deliver the prime quality comparable to the best in the world. The marketing management system we
+                    follow is the backbone of our company ensuring our customers a satisfying experience with Pooja
+                    Exports.</p>
+
+                <p class="lg:text-lg text-xs text-justify">
+                    Our network spans countries in Asia, Europe and Africa. Mr. Shiju Sudevan, our managing director
+                    personally takes the effort to find the best distributors, sub-agents and importers, developing and
+                    implementing unique marketing strategies to ensure a safe and high quality production.
+                    Our Australian operations have been kickstarted recently, with an array of products targeting the
+                    retail sector, construction and Agro Industries, sourced from Indonesia, India and China.
+                </p>
+
+
+            </div>
+            <div class="flex lg:flex-row flex-col justify-around lg:gap-0 gap-5 lg:items-start items-center">
+                <div class="flex flex-col items-center">
+                    <h1 class="font-bold text-lg lg:mb-12 lg:text-2xl">THE MANAGING DIRECTOR</h1>
+                    <img src="./images/MD.png" alt="MANAGING DIRECTOR" class="object-cover lg:w-[245px] w-[50%]">
+                </div>
+                <div class="text-[#000] text-[16px] font-normal flex flex-col gap-8 lg:mb-20 mb-5">
+                    <p class="max-w-[710px] lg:text-lg text-xs text-justify">
+                        Mr. Shiju Sudevan is a result-focused professional having more than 18 years of experience
+                        across sales/marketing, personnel management/development and international business. As an
+                        analytical leader and dynamic team player, Mr. Shiju is adept at devising effective strategies
+                        for resolving complex issues, promoting product visibility and enhancing corporate growth. His
+                        advanced communication skills, highly detail-oriented outlook and solid interpersonal and
+                        decision making skills makes him a great leader. </p>
+                    <p class="max-w-[710px] lg:text-lg text-xs text-justify">Mr. Shiju's 18 years of expertise includes
+                        International Business
+                        Relations, Contract
+                        Negotiations, Foreign Trade, Product Marketing, Project Management Advertising/Promotions,
+                        Market Analysis, Proposal Preparation, International Sourcing, New Market Development,
+                        Export/Import and all Banking related works.
+                        © Pooja Exports.</p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="bg-[#848883] lg:pt-10 pt-5">
+        <div class="custom_container">
+            <div class="flex lg:flex-row flex-col lg:gap-0 gap-7 justify-between items-start">
+                <div class="flex flex-col gap-5">
+                    <div>
+                        <img src="./images/footerlogo.png" alt="logo" class="lg:w-60 w-52">
+                    </div>
+                    <div>
+                        <p class="text-[#fff] text-xs lg:text-sm max-w-[430px]">Delivering Premium Export Solutions
+                            Designed to Meet Your Business Needs with Reliability and Global Reach.</p>
+                    </div>
+                </div>
+                <div class="text-white flex flex-col gap-3">
+                    <ol class="list-disc list-inside">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#aboutus">About</a></li>
+                        <li><a href="/product.html">Products</a></li>
+                        <li><a href="/indonesia.html">Indonesia Factory</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ol>
+                </div>
+
+
+                <div class="flex flex-col gap-4 text-[#fff]">
+                    <p class="lg:text-lg text-sm font-semibold">Pooja Exports</p>
+                    <div class="flex gap-4 lg:mb-0 mb-5">
+                        <i class="fa-regular fa-envelope lg:text-2xl"></i>
+                        <div>
+                            <p class="leading-none font-semibold lg:text-lg">Email Us</p>
+                            <div>
+                                <p><a href="mailto:shiju1973@gmail.com">Email: shiju1973@gmail.com</a></p>
+                                <p><a href="mailto:ssudev@yahoo.com">ssudev@yahoo.com</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w-full h-[1px] bg-[#fff] my-5"></div>
+            <div class="text-[#fff] text-center text-sm pb-3">
+                &copy; 2025 Pooja Exports. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+
+</html>

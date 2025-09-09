@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooja-Export</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        Poppins: ["Poppins", "sans-serif"],
+                        Rubik: ["Rubik Doodle Shadow", "cursive"],
+                    },
+                },
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Doodle+Shadow&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+
+</head>
+
+<body class="font-Poppins">
+
+    <nav class="custom_container flex justify-between items-center lg:pt-4  pt-4">
+
+        <div>
+            <img src="./images/logo.png" alt="Company Logo" class="w-40 md:w-56">
+        </div>
+
+
+        <ul class="hidden lg:flex items-center rounded-full">
+            <li><a href="index.html"
+                    class="nav-link lg:text-lg font-normal  hover:bg-[#ffe2e2] rounded-xl py-1 px-5">Home</a></li>
+            <li><a href="index.html#aboutus"
+                    class="nav-link lg:text-lg font-normal hover:bg-[#ffe2e2] rounded-xl py-1 px-5">About</a></li>
+            <li><a href="index.html#products"
+                    class="nav-link lg:text-lg font-normal hover:bg-[#ffe2e2] rounded-xl py-1 px-5">Products</a></li>
+            <li><a href="indonesia.html"
+                    class=" lg:text-lg font-normal hover:bg-[#ffe2e2] rounded-xl py-1 px-5">Indonesia Factory</a></li>
+            <li><a href="index.html#locations"
+                    class="nav-link lg:text-lg font-normal hover:bg-[#ffe2e2] rounded-xl py-1 px-5">Location</a></li>
+            <li><a href="index.html#contact"
+                    class="nav-link lg:text-lg font-normal hover:bg-[#ffe2e2] rounded-xl py-1 px-5">Contact Us</a></li>
+        </ul>
+
+
+        <button id="menu-btn" class="md:hidden text-2xl ">
+            <i class="fa-solid fa-bars "></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed top-0 right-0 w-3/4 h-full bg-white z-50  text-lg font-medium pt-28">
+
+        <!-- Close Button -->
+        <button id="close-btn" class="close-btn absolute top-6 right-6 text-3xl text-gray-700 hover:text-black">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Links -->
+        <div class="flex flex-col gap-4 justify-center items-center">
+            <a href="" class="close-btn hover:text-[#fff] hover:bg-[#D73543] transition">Home</a>
+            <a href="#aboutus" class=" close-btn hover:text-[#fff] hover:bg-[#D73543] transition">About</a>
+            <a href="#products" class="close-btn hover:text-[#fff] hover:bg-[#D73543] transition">Products</a>
+            <a href="indonesia.html" class=" close-btn hover:text-[#fff] hover:bg-[#D73543] transition">Indonesia
+                Factory</a>
+            <a href="#locations" class="close-btn hover:text-[#fff] hover:bg-[#D73543] transition">Location</a>
+            <a href="#contact" class="close-btn hover:text-[#fff] hover:bg-[#D73543] transition">Contact Us</a>
+        </div>
+    </div>
+
+
+    <section>
+        <div class="relative w-full h-screen ">
+            <video src="./images/hero.mp4" autoplay muted loop playsinline preload="auto"
+                class="w-full h-full object-cover">
+                Your browser does not support the video tag.
+            </video>
+            <div
+                class="absolute inset-0 flex flex-col items-start lg:gap-5 justify-center text-[#fff] text-4xl lg:ml-20  custom_container">
+                <h1 class="lg:text-7xl md:text-5xl text-4xl max-w-[540px] font-bold leading-10">
+                    Global Frieght Solution
+                </h1>
+                <p class="lg:text-sm text-xs max-w-[510px] text-justify font-medium">Lorem Ipsum is simply dummy text of
+                    the
+                    printing and typesetting
+                    industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                <div>
+                    <a href="#contact">
+                        <button
+                            class="bg-[#D73543] hover:bg-[#a52631] text-[#fff] lg:px-10 lg:py-3 px-5 py-2 text-sm lg:text-lg rounded-xl font-semibold">Contact
+                            Us</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="lg:pt-10 pt-8" id="aboutus">
+        <div class="custom_container">
+
+            <div class="lg:mb-5 mb-4 lg:ml-20">
+                <p class="font-Rubik font-normal lg:text-[24px] text-xl leading-none">About Us</p>
+                <p class="lg:text-[36px] text-2xl font-bold ml-5 -mt-[6px] leading-none">About Us</p>
+            </div>
+
+        </div>
+        <div class="flex lg:flex-row flex-col bg-[#D6D5D5] lg:gap-10 gap-5  items-center">
+            <div>
+                <img src="./images/about.webp" alt="aboutus" class=" lg:h-[530px] object-cover">
+            </div>
+
+            <div class=" flex flex-col lg:gap-6 gap-3 overflow-hidden" data-aos="zoom-in">
+
+                <p
+                    class="lg:text-[15px] text-xs md:text-sm max-w-[630px] text-[#000] text-justify lg:leading-6 lg:px-0 px-3">
+                    Pooja Exports is a premier global export company with over 25 years of trusted service, connecting
+                    markets across 32 countries. Based in Hong Kong, we specialize in sourcing, packaging, and shipping
+                    a wide range of products with strict quality standards. Our professional team works with precision
+                    and dedication, ensuring that customer satisfaction remains at the heart of everything we do.
+
+                    Our strong global presence extends across Asia, Europe, and Africa, with a recently established
+                    branch in Australia to serve the retail, construction, and agro industries. Products are carefully
+                    sourced from leading markets such as India, China, and Indonesia to meet the diverse needs of our
+                    clients worldwide.
+
+                    At Pooja Exports, we believe in more than just delivering products—we deliver value, trust, and
+                    reliability. Our success is powered by continuous innovation and a commitment to providing the
+                    highest quality to every customer we serve.</p>
+                <div class="text-[#fff]  text-center my-8 lg:mb-0">
+                    <a href="/exports/about.html">
+                        <button
+                            class="lg:py-3 py-2 px-4 lg:px-6 text-sm lg:text-[15px] bg-[#D73543] hover:bg-[#a52631] rounded-xl">
+                            Read More
+                            <span><i class="fa-solid fa-arrow-right"></i></span>
+                        </button>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="" id="products">
+
+        <div class="bg-[#d2d2d280] ">
+            <div class="custom_container">
+                <div class="lg:flex lg:flex-row flex-col lg:gap-20 justify-center items-center pt-10 pb-28 ">
+                    <div class="text-center lg:text-start lg:mb-0 mb-5">
+                        <h3 class="font-Rubik font-normal lg:text-[20px] text-sm leading-none">Our</h3>
+                        <h1 class="text-2xl lg:text-4xl font-bold leading-none">Products</h1>
+                    </div>
+                    <div class="h-36 w-1 bg-[#34CF09] lg:block hidden"></div>
+                    <div>
+                        <p class="lg:text-[16px] leading-6 text-sm lg:text-start text-center text-[#000] max-w-[660px]">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has
+                            been the industry's
+                            standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                            and
+                            scrambled it to make a
+                            type specimen book. It has survived not only five centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom_container">
+
+            <div class="pb-10 grid grid-cols-1 md:grid-cols-2 gap-10  mt-[-60px] ">
+                <div class="flex flex-col lg:flex-row lg:gap-6 gap-3 items-center  shadow-xl  bg-[#fff]  lg:py-0 py-5 overflow-hidden"
+                    data-aos="fade-up">
+                    <div class="">
+                        <img src="./images/product.png" alt="steel" class="lg:w-full w-[150px]">
+                    </div>
+                    <div class="lg:px-0 px-4">
+                        <h2 class="font-bold lg:text-xl text-lg mb-4">Steel</h2>
+                        <p class="max-w-[350px] lg:text-sm text-xs">Steel is the backbone of modern industry, used in
+                            everything from construction to machinery. We provide materials that are strong, durable,
+                            and crafted to perform well in demanding environments. With careful selection and reliable
+                            supply, our steel products help businesses build with confidence and achieve long-lasting
+                            results.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row lg:gap-6 gap-3 items-center  shadow-xl bg-[#fff] lg:py-0 py-5 overflow-hidden"
+                    data-aos="fade-up">
+                    <div>
+                        <img src="./images/productone.png" alt="Artificial Grass" class="lg:w-full w-[150px]">
+                    </div>
+                    <div class="lg:px-0 px-4">
+                        <h2 class="font-bold lg:text-xl mb-4">Artificial Grass</h2>
+                        <p class="max-w-[350px] lg:text-sm text-xs">Synthetic turf is a low-maintenance alternative to
+                            natural grass, staying green year-round without watering or mowing. Ideal for gardens,
+                            playgrounds, and sports areas, it is laid over a prepared base and filled with sand or
+                            rubber for support. Durable and weather-resistant, it requires only occasional brushing or
+                            rinsing, saving water and reducing chemical use.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row lg:gap-6 gap-3 items-center  shadow-xl bg-[#fff] lg:py-0 py-5 overflow-hidden"
+                    data-aos="fade-up">
+                    <div>
+                        <img src="./images/producttwo.png" alt="Pebbles " class="lg:w-full w-[150px]">
+                    </div>
+                    <div class="lg:px-0 px-4">
+                        <h2 class="font-bold lg:text-xl mb-4">Pebbles</h2>
+                        <p class="max-w-[350px] lg:text-sm text-xs">We offer premium decorative pebbles designed for
+                            both spiritual and aesthetic purposes. Our carefully selected range combines meaningful
+                            symbolism with visual appeal. Packed securely for global shipping, these pebbles bring
+                            beauty and serenity to any space.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:flex-row lg:gap-6 gap-3 items-center shadow-xl bg-[#fff] lg:py-0 py-5 overflow-hidden"
+                    data-aos="fade-up">
+                    <div>
+                        <img src="./images/productthree.png" alt="Charcoal  Briquette " class="lg:w-full w-[150px]">
+                    </div>
+                    <div class="lg:px-0 px-4">
+                        <h2 class="font-bold lg:text-xl mb-4">Charcoal Briquette</h2>
+                        <p class="max-w-[350px] lg:text-sm text-xs">Coconut Charcoal Briquettes are produced by
+                            compressing carbon-rich coconut shells into solid, easy-to-use blocks. Fully natural and
+                            environmentally friendly, they come from a renewable resource and contain no chemicals. Each
+                            pack is securely packaged with durable materials, and the outer design can be customized to
+                            suit different markets, ensuring safe delivery and quality presentation.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-[#fff] lg:text-end text-center mb-5 lg:mb-0">
+                <button><a href="/exports/product.html"
+                        class="lg:py-3 py-2 px-4 lg:px-6 text-sm lg:text-[15px] bg-[#D73543] hover:bg-[#a52631] rounded-xl inline-flex items-center gap-2 text-white">
+                        More Products
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a></button>
+            </div>
+        </div>
+    </section>
+    <div class="h-1 bg-[#D9D9D9] w-full my-10"></div>
+
+    <section id="locations">
+        <div class="customs_container">
+            <div class="lg:text-start text-center">
+                <h3 class="font-Rubik font-normal lg:text-[20px] text-sm leading-none">Our</h3>
+                <h1 class="text-2xl lg:text-4xl font-bold leading-none">Branches</h1>
+                <p class="text-[#000] lg:text-[16px] text-sm font-normal mt-5 lg:mb-0 mb-7">Lorem Ipsum is simply dummy
+                    text of the printing
+                    and typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown </p>
+            </div>
+            <div class="lg:my-16 flex lg:flex-row flex-col justify-center gap-5 items-center ">
+                <div class="flex flex-col lg:gap-12 gap-6">
+                    <div class="flex items-start gap-5 overflow-hidden" data-aos="fade-right" data-aos-delay="0">
+                        <i class="fa-solid fa-location-dot lg:text-[32px] text-[20px] text-[#D73543]"></i>
+                        <div>
+                            <h2 class="lg:text-[18px] text-sm font-bold leading-none mb-2">Indonesia branch</h2>
+                            <p class="lg:text-[14px] text-sm font-normal max-w-[350px]">Address:- PT POOJA EXPORTS
+                                INTERNATIONAL
+                                WTC Mangga Dua ,
+                                Jakarta , Indonesia</p>
+                        </div>
+
+                    </div>
+                    <div class="flex items-start gap-5 overflow-hidden" data-aos="fade-right" data-aos-delay="200">
+                        <i class="fa-solid fa-location-dot lg:text-[32px] text-[20px] text-[#D73543]"></i>
+                        <div>
+                            <h2 class="lg:text-[18px] text-sm  font-bold leading-none mb-2">Australia branch</h2>
+                            <p class="lg:text-[14px] text-sm  font-normal max-w-[240px]">Address
+                                <br> Brisbane : Pooja Exports Pty
+                                LtdSuite 41, Building 6 2404 Logan RoadEight Miles Plains Qld 4113
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="flex items-start gap-5 overflow-hidden" data-aos="fade-right" data-aos-delay="400">
+                        <i class="fa-solid fa-location-dot lg:text-[32px] text-[20px] text-[#D73543]"></i>
+                        <div>
+                            <h2 class="lg:text-[18px] text-sm  font-bold leading-none mb-2">Hong Kong branch</h2>
+                            <p class="lg:text-[14px] text-sm  font-normal max-w-[295px]">Address:- Pooja Exports Unit
+                                2509, Ho
+                                King- Comm Ctr, Yuen St Hong Kong</p>
+                        </div>
+
+                    </div>
+                    <div class="flex items-start gap-5 overflow-hidden" data-aos="fade-right" data-aos-delay="600">
+                        <i class="fa-solid fa-location-dot lg:text-[32px] text-[20px] text-[#D73543]"></i>
+                        <div>
+                            <h2 class="lg:text-[18px] text-sm  font-bold leading-none mb-2">India branch</h2>
+                            <p class="lg:text-[14px] text-sm  font-normal max-w-[300px]">Address:- POOJA Exports,
+                                R.T.Nagar,
+                                Bangalore,
+                                India<br>Pin: 560032</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/map.png" alt="map" class="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="lg:py-16 py-8" id="contact">
+        <div class="customs_container">
+            <div class="text-center">
+                <h1 class="font-Rubik leading-none lg:text-[24px] text-[16px] font-normal">Get I Touch</h1>
+                <h1 class="font-bold lg:text-[36px] text-[24px] leading-none">Get In Touch</h1>
+                <div class="flex justify-center">
+                    <p
+                        class="font-normal text-[#000] lg:text-[15px] text-xs mt-5 text-center max-w-[950px] lg:mb-0 mb-5">
+                        Get in touch today to discuss your export requirements and receive reliable, high-quality
+                        products delivered efficiently to your location.</p>
+                </div>
+            </div>
+            <div class="flex lg:flex-row flex-col justify-around items-center lg:mt-32 overflow-hidden">
+                <div data-aos="fade-up">
+                    <h1 class="font-bold lg:tex-[16px] lg:mb-3 lg:text-start text-center">Send Message</h1>
+                    <p class="max-w-[450px] lg:text-xs text-[10px] lg:text-start text-center">Connect with us today to
+                        discuss your export requirements, explore our products, and receive reliable, timely service you
+                        can trust</p>
+                    <form class="lg:mt-10 mt-5" action="https://api.web3forms.com/submit" method="POST" id="contact">
+
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="a54fe400-b5e6-4b31-b160-8eb20886a7c7">
+
+                        <!-- Email Settings -->
+                        <input type="hidden" name="subject" value="New Contact Form Submission">
+                        <input type="hidden" name="from_name" value="My Website Contact Form">
+                        <input type="hidden" name="replyto" value="{email}">
+                        <input type="hidden" name="recipient" value="sreelakshmi.stackup@gmail.com">
+                        <!-- 👈 your email -->
+
+                        <div class="flex flex-col gap-6 lg:items-start items-center justify-center">
+                            <div class="flex flex-col">
+                                <label class="font-semibold text-[15px]">Name</label>
+                                <input type="text" required name="name"
+                                    class="border-b border-[#000] lg:w-96 focus:border-[#D73543] focus:outline-none px-2 py-1 bg-transparent" />
+                            </div>
+
+                            <div class="flex flex-col">
+                                <label class="font-semibold text-[15px]">Email</label>
+                                <input type="email" required name="email"
+                                    class="border-b border-[#000] lg:w-96 focus:border-[#D73543] focus:outline-none px-2 py-1 bg-transparent" />
+                            </div>
+
+                            <div class="flex flex-col">
+                                <label class="font-semibold text-[15px]">Message</label>
+                                <textarea required name="message"
+                                    class="border-b border-[#000] lg:w-96 focus:border-[#D73543] focus:outline-none px-2 py-1 bg-transparent"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="flex lg:justify-end justify-center lg:mt-20 my-10">
+                            <button type="submit"
+                                class="lg:px-10 lg:py-2 px-6 py-2 bg-[#D73543] text-white font-semibold rounded-lg hover:bg-[#a52631] transition">
+                                Submit <span><i class="fa-solid fa-arrow-right"></i></span>
+                            </button>
+                        </div>
+                    </form>
+
+
+                </div>
+                <div class="h-[25rem] w-0.5 bg-[#D9D9D9] lg:block hidden overflow-hidden"></div>
+                <div class="" data-aos="fade-up">
+                    <h1 class="font-semibold lg:text-[24px] text-[18px] lg:mb-6 mb-4">Pooja Export,</h1>
+                    <div class="flex gap-4 lg:mb-0 mb-5">
+                        <i class="fa-regular fa-envelope lg:text-2xl"></i>
+                        <div>
+                            <p class="leading-none font-semibold lg:text-lg">Email Us</p>
+                            <div>
+                                <p><a href="mailto:shiju1973@gmail.com">Email: shiju1973@gmail.com</a></p>
+                                <p><a href="mailto:ssudev@yahoo.com">ssudev@yahoo.com</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 lg:mb-0 mb-5">
+                        <i class="fa-regular fa-comment lg:text-2xl"></i>
+                        <div>
+                            <h1 class="lg:text-lg font-semibold">We Chat</h1>
+                            <div>
+                                <p>
+                                    <a href="weixin://dl/chat?shijus73">WeChat: shijus73</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#848883] lg:pt-10 pt-5">
+        <div class="custom_container">
+            <div class="flex lg:flex-row flex-col lg:gap-0 gap-7 justify-between items-start">
+                <div class="flex flex-col gap-5">
+                    <div>
+                        <img src="./images/footerlogo.png" alt="logo" class="lg:w-60 w-52">
+                    </div>
+                    <div>
+                        <p class="text-[#fff] text-xs lg:text-sm max-w-[430px]">Delivering Premium Export Solutions
+                            Designed to Meet Your Business Needs with Reliability and Global Reach.</p>
+                    </div>
+                </div>
+                <div class="text-white flex flex-col gap-3">
+                    <ol class="list-disc list-inside">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#aboutus">About</a></li>
+                        <li><a href="#prodcuts">Products</a></li>
+                        <li><a href="/indonesia.html">Indonesia Factory</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ol>
+                </div>
+
+
+                <div class="flex flex-col gap-4 text-[#fff]">
+                    <p class="lg:text-lg text-sm font-semibold">Pooja Exports</p>
+                    <div class="flex gap-4 lg:mb-0 mb-5">
+                        <i class="fa-regular fa-envelope lg:text-2xl"></i>
+                        <div>
+                            <p class="leading-none font-semibold lg:text-lg">Email Us</p>
+                            <div>
+                                <p><a href="mailto:shiju1973@gmail.com">Email: shiju1973@gmail.com</a></p>
+                                <p><a href="mailto:ssudev@yahoo.com">ssudev@yahoo.com</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w-full h-[1px] bg-[#fff] my-5"></div>
+            <div class="text-[#fff] text-center text-sm pb-3">
+                &copy; 2025 Pooja Exports. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+        });
+    </script>
+
+    <!-- Your custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+</body>
+
+</html>

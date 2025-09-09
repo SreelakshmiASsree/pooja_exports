@@ -1,0 +1,25 @@
+.custom_container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0px 20px;
+
+}
+.customs_container{
+   max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+
+
+body {
+  overflow-x: hidden;  
+  overflow-y: auto;  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+

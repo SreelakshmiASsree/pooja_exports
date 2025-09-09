@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        Poppins: ["Poppins", "sans-serif"],
+                        Rubik: ["Rubik Doodle Shadow", "cursive"],
+                    },
+                },
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Doodle+Shadow&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+</head>
+
+<body class="font-Poppins">
+
+    <nav class="custom_container flex justify-between items-center lg:pt-4  pt-4">
+
+        <div>
+            <img src="./images/logo.png" alt="Company Logo" class="w-40 md:w-56">
+        </div>
+
+
+        <ul class="hidden lg:flex items-center rounded-full">
+            <li><a href="index.html"
+                    class="nav-link lg:text-lg font-normal  hover:bg-[#ffe2e2] rounded-xl py-1 px-5">Home</a></li>
+            <li><a href="index.html#aboutus"
+                    class="nav-link lg:text-lg font-normal hover:bg-[#ffe2e2] rounded-xl py-1 px-5">About</a></li>
+            <li><a href="/product.html"
+                    class="nav-link lg:text-lg font-normal hover:bg-[#ffe2e2] rounded-xl py-1 px-5">Products</a></li>
+            <li><a href="indonesia.html"
+                    class=" lg:text-lg font-normal hover:bg-[#ffe2e2] rounded-xl py-1 px-5">Indonesia Factory</a></li>
+            <li><a href="index.html#locations"
+                    class="nav-link lg:text-lg font-normal hover:bg-[#ffe2e2] rounded-xl py-1 px-5">Location</a></li>
+            <li><a href="index.html#contact"
+                    class="nav-link lg:text-lg font-normal hover:bg-[#ffe2e2] rounded-xl py-1 px-5">Contact Us</a></li>
+        </ul>
+
+
+
+        <button id="menu-btn" class="md:hidden text-2xl ">
+            <i class="fa-solid fa-bars "></i>
+        </button>
+    </nav>
+
+    <div id="mobile-menu" class="hidden fixed top-0 right-0 w-3/4 h-full bg-white z-50  text-lg font-medium pt-28">
+
+        <!-- Close Button -->
+        <button id="close-btn" class="close-btn absolute top-6 right-6 text-3xl text-gray-700 hover:text-black">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Links -->
+        <div class="flex flex-col gap-4 justify-center items-center">
+            <a href="index.html" class="close-btn hover:text-[#fff] hover:bg-[#D73543] transition">Home</a>
+            <a href="index.html#aboutus" class=" close-btn hover:text-[#fff] hover:bg-[#D73543] transition">About</a>
+            <a href="/product.html" class="close-btn hover:text-[#fff] hover:bg-[#D73543] transition">Products</a>
+            <a href="indonesia.html" class=" close-btn hover:text-[#fff] hover:bg-[#D73543] transition">Indonesia
+                Factory</a>
+            <a href="index.html#locations"
+                class="close-btn hover:text-[#fff] hover:bg-[#D73543] transition">Location</a>
+            <a href="index.html#contact" class="close-btn hover:text-[#fff] hover:bg-[#D73543] transition">Contact
+                Us</a>
+        </div>
+
+    </div>
+    <div class="">
+        <div class="relative">
+            <img src="./images/banner_img .webp" alt="banner" class="w-full lg:h-[400px] object-cover ">
+        </div>
+        <div class="absolute lg:top-44 top-36 lg:left-10 left-5 ">
+            <h1 class="lg:text-7xl md:text-5xl text-3xl max-w-[540px] font-bold leading-10 text-[#fff]">
+                Indonasia Factory
+            </h1>
+            <p class="lg:text-lg text-[10px] max-w-[510px] text-justify font-extrabold text-[#fff]">Address:- PT POOJA
+                EXPORTS
+                INTERNATIONALWTC Mangga Dua , Jakarta , Indonesia</p>
+        </div>
+    </div>
+    <div>
+        <div class="custom_container">
+            <div class="text-[#fff] lg:text-start my-5 lg:my-10">
+                <a href="index.html"
+                    class="relative z-50 inline-block lg:py-3 py-2 px-4 lg:px-6 text-sm lg:text-[15px] bg-[#D73543] hover:bg-[#a52631] rounded-xl text-white">
+                    <i class="fa-solid fa-arrow-left"></i> Back
+                </a>
+            </div>
+
+            <div class="flex justify-center items-center ">
+                <p class="text-[#000] font-normal lg:text-sm text-xs text-center">Lorem Ipsum is simply dummy text
+                    of the
+                    printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining
+                    essentially unchanged. 
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                    to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting,
+                    remaining essentially unchanged. </p>
+            </div>
+
+
+            <div>
+
+                <div>
+                    <div class="lg:mb-5 mb-4 text-center lg:my-10 my-5">
+                        <p class="font-Rubik font-normal lg:text-3xl text-2xl leading-none">Ablaza</p>
+                        <p class="lg:text-4xl text-3xl font-bold ml-5 -mt-[6px] leading-none">Products</p>
+                    </div>
+                    <div class="lg:mt-32 mt-5 flex flex-col lg:gap-20 gap-10 lg:mb-16 mb-8">
+
+
+                        <div class="flex flex-col lg:flex-row justify-around items-center" data-aos="fade-up">
+                            <div>
+                                <img src="./images/charcol-briquette.webp" alt="ablazaproduct"
+                                    class="cursor-pointer w-[550px] lg:h-[400px] object-contain lg:object-cover"
+                                    onclick="openCarousel(1)">
+                            </div>
+                            <div>
+                                <h1 class="font-bold lg:text-2xl lg:mb-6 my-2">Coconut Charcoal Briquette</h1>
+                                <p class="max-w-[600px] lg:text-[14px] text-xs leading-4 lg:leading-7">
+                                    Coconut Charcoal Briquettes are made from coconut shell, which is carbonized and
+                                    then compressed to briquettes. Environment friendly as it is derived from a
+                                    renewable resource and 100% organic in its content.
+                                    Our Coconut charcoal briquettes are packed in high quality durable packaging with
+                                    the outer cover customized for the relevant market.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col-reverse lg:flex-row justify-around items-center" data-aos="fade-up">
+                            <div>
+                                <h1 class="font-bold lg:text-2xl lg:mb-6 my-2">Coco peat</h1>
+                                <p class="max-w-[600px] lg:text-[14px] text-xs leading-4 lg:leading-7">
+                                    As one of the leading suppliers of coco peat, Pooja Exports
+                                    International manufactures and exports coco peat in 50kg
+                                    bags .We ensure production ofhigh grade coco peat to enable the best services for
+                                    our customers. The aerated structure of coco peat enables usage in farming due to
+                                    its water absorbent property, and excellent soil conditioner. It is an excellent
+                                    growing medium for container plant growing and has natural rooting hormones and
+                                    anti-fungal properties.
+                                </p>
+                            </div>
+                            <div>
+                                <img src="./images/cocopeat_ablaza.webp" alt="ablazaproduct"
+                                    class="cursor-pointer w-[500px] lg:h-[350px] object-contain lg:object-cover"
+                                    onclick="openCarousel(6)">
+                            </div>
+                        </div>
+
+
+                        <div class="flex flex-col-reverse lg:flex-row justify-around items-center" data-aos="fade-up">
+                            <div>
+                                <img src="./images/hard_wood.webp" alt="ablazaproduct"
+                                    class="cursor-pointer w-[500px] lg:h-[350px] object-contain lg:object-cover"
+                                    onclick="openCarousel(2)">
+                            </div>
+                            <div>
+                                <h1 class="font-bold lg:text-2xl lg:mb-6 my-2">Hardwood Charcoal</h1>
+                                <p class="max-w-[600px] lg:text-[14px] text-xs leading-4 lg:leading-7">
+                                    Wood charcoal is made by slowly burning pieces of different types of wood in the
+                                    absence of oxygen until all the natural chemicals, sap and Moisture gets out of the
+                                    wood
+                                    After that we are left with less harmful charcoal lumps with lots of good qualities;
+                                    it is little more than carbon, leaves very little ash after burning out, burns
+                                    hotter and lights faster than briquettes. It also contains no fillers or additives
+                                    which makes it one of the cleanest ways to barbecue.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="flex flex-col lg:flex-row justify-around items-center" data-aos="fade-up">
+
+                            <div>
+                                <h1 class="font-bold lg:text-2xl lg:mb-6 my-2">Sawdust Briquette</h1>
+                                <p class="max-w-[600px] lg:text-[14px] text-xs leading-4 lg:leading-7">
+                                    Our premium quality Barbecue food grade briquette grill fuel is made from 100% hard
+                                    wood. We guarantee high BTU capacity, clean burning, low ash, and low moisture, thus
+                                    assuring you the finest pellet/briquette grilling experience. The briquettes are
+                                    made from 100% sawed wood dust without any additives
+                                </p>
+                            </div>
+                            <div>
+                                <img src="./images/saw_dust.webp" alt="ablazaproduct"
+                                    class="cursor-pointer w-[500px] lg:h-[350px] object-contain lg:object-cover"
+                                    onclick="openCarousel(3)">
+                            </div>
+                        </div>
+                        <div class="flex flex-col-reverse lg:flex-row justify-around items-center" data-aos="fade-up">
+                            <div>
+                                <img src="./images/Natural-wood-charcoal.webp" alt="ablazaproduct"
+                                    class="cursor-pointer w-[500px] lg:h-[350px] object-contain lg:object-cover"
+                                    onclick="openCarousel(4)">
+                            </div>
+                            <div>
+                                <h1 class="font-bold lg:text-2xl lg:mb-6 my-2">Wood Charcoal Briquette</h1>
+                                <p class="max-w-[600px] lg:text-[14px] text-xs leading-4 lg:leading-7">
+                                    Our wood charcoal briquettes are made from selected hard woods that are burnt down
+                                    the same way as wood charcoal. Our briquettes burn cleaner, hotter, and longer than
+                                    normal B&B Charcoal briquettes with high BTU capacity. They are made from our own
+                                    hardwood charcoal manufactured from selected hardwoods with no chemical additives or
+                                    fillers.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="flex flex-col lg:flex-row justify-around items-center" data-aos="fade-up">
+
+                            <div>
+                                <h1 class="font-bold lg:text-2xl lg:mb-6 my-2">Coconut Fibre</h1>
+                                <p class="max-w-[600px] lg:text-[14px] text-xs leading-4 lg:leading-7">
+                                    Pooja Exports International produces one of the best qualities of coir Fibres
+                                    available in the market. Obtained from green coconuts, we produce a very fine White
+                                    fibre , Our White fibre is of the highest grade, eco-friendly and cost effective .
+                                    We assure quality and customer satisfaction
+                                </p>
+                            </div>
+                            <div>
+                                <img src="./images/coconut-Fibre.webp" alt="ablazaproduct"
+                                    class="cursor-pointer w-[500px] lg:h-[350px] object-contain lg:object-cover"
+                                    onclick="openCarousel(5)">
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col lg:flex-row justify-around items-center" data-aos="fade-up">
+                            <div>
+                                <img src="./images/coconut-shell-charcoal.webp" alt="ablazaproduct"
+                                    class="cursor-pointer w-[500px] lg:h-[350px] object-contain lg:object-cover"
+                                    onclick="openCarousel(7)">
+                            </div>
+                            <div>
+                                <h1 class="font-bold lg:text-2xl lg:mb-6 my-2">Coconut Shell based Charcoal</h1>
+                                <p class="max-w-[600px] lg:text-[14px] text-xs leading-4 lg:leading-7">
+                                    The coconut shell has a high calorific value and can be used to produce steam,
+                                    energy-rich gases, bio-oil, biochar etc. Coconut shell is a solid fuel and it is
+                                    more suitable for pyrolysis process as it contains lower ash content, high volatile
+                                    matter content and is available consistently. The higher fixed carbon content leads
+                                    to the production of a high-quality solid residue which can be used in the
+                                    production of activated carbon
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="carouselModal"
+                        class="hidden fixed inset-0 bg-black bg-opacity-80  justify-center items-center z-50">
+                        <button onclick="closeCarousel()"
+                            class="absolute top-5 right-5 text-white text-3xl">&times;</button>
+
+                        <div class="relative  ">
+                            <div id="carousel" class="carousel p-5"></div>
+                            <button onclick="prevSlide()"
+                                class="absolute left-0 top-1/2 -translate-y-1/2 text-white text-3xl px-3">&#10094;</button>
+                            <button onclick="nextSlide()"
+                                class="absolute right-0 top-1/2 -translate-y-1/2 text-white text-3xl px-3">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#848883] lg:pt-10 pt-5">
+        <div class="custom_container">
+            <div class="flex lg:flex-row flex-col lg:gap-0 gap-7 justify-between items-start">
+                <div class="flex flex-col gap-5">
+                    <div>
+                        <img src="./images/footerlogo.png" alt="logo" class="lg:w-60 w-52">
+                    </div>
+                    <div>
+                        <p class="text-[#fff] text-xs lg:text-sm max-w-[430px]">Delivering Premium Export Solutions
+                            Designed to Meet Your Business Needs with Reliability and Global Reach. </p>
+                    </div>
+                </div>
+                <div class="text-white flex flex-col gap-3">
+                    <ol class="list-disc list-inside">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#aboutus">About</a></li>
+                        <li><a href="/product.html">Products</a></li>
+                        <li><a href="/indonesia.html">Indonesia Factory</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ol>
+                </div>
+
+
+                <div class="flex flex-col gap-4 text-[#fff]">
+                    <p class="lg:text-lg text-sm font-semibold">Pooja Exports</p>
+                    <div class="flex gap-4 lg:mb-0 mb-5">
+                        <i class="fa-regular fa-envelope lg:text-2xl"></i>
+                        <div>
+                            <p class="leading-none font-semibold lg:text-lg">Email Us</p>
+                            <div>
+                                <p><a href="mailto:shiju1973@gmail.com">Email: shiju1973@gmail.com</a></p>
+                                <p><a href="mailto:ssudev@yahoo.com">ssudev@yahoo.com</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w-full h-[1px] bg-[#fff] my-5"></div>
+            <div class="text-[#fff] text-center text-sm pb-3">
+                &copy; 2025 Pooja Exports. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+        });
+    </script>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
