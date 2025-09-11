@@ -155,3 +155,6 @@ function prevProductImage() {
   prodCurrentIndex = (prodCurrentIndex - 1 + productImages[prodCurrentProduct].length) % productImages[prodCurrentProduct].length;
   showCurrentProductFile();
 }
+
+//copy right year
+  document.getElementById("year").textContent = new Date().getFullYear();
