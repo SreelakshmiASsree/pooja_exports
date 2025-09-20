@@ -130,14 +130,16 @@ function showCurrentProductFile() {
 }
 
 
-function openProductCarousel(product) {
+function openProductCarousel(product, index = 0) {
   prodCurrentProduct = product;
-  prodCurrentIndex = 0;
+  prodCurrentIndex = index; // open from clicked index
   const modal = document.getElementById("productCarouselModal");
   modal.classList.remove("hidden");
   modal.classList.add("flex");
   showCurrentProductFile();
 }
+
+
 function closeProductCarousel() {
   const modal = document.getElementById("productCarouselModal");
   modal.classList.add("hidden");
@@ -155,6 +157,29 @@ function prevProductImage() {
   prodCurrentIndex = (prodCurrentIndex - 1 + productImages[prodCurrentProduct].length) % productImages[prodCurrentProduct].length;
   showCurrentProductFile();
 }
+
+
+
+let productPreviewIndex = {};
+
+function nextProductPreview(product) {
+  if (!productPreviewIndex[product]) productPreviewIndex[product] = 0;
+  productPreviewIndex[product] = (productPreviewIndex[product] + 1) % productImages[product].length;
+  document.getElementById(`${product}-preview`).src = productImages[product][productPreviewIndex[product]];
+}
+
+function prevProductPreview(product) {
+  if (!productPreviewIndex[product]) productPreviewIndex[product] = 0;
+  productPreviewIndex[product] = (productPreviewIndex[product] - 1 + productImages[product].length) % productImages[product].length;
+  document.getElementById(`${product}-preview`).src = productImages[product][productPreviewIndex[product]];
+}
+
+
+
+
+
+
+
 
 //copy right year
   document.getElementById("year").textContent = new Date().getFullYear();
